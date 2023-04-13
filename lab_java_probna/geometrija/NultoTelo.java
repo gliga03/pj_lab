@@ -9,7 +9,7 @@ public class NultoTelo extends Exception {
 
 	public NultoTelo() {
 		
-		super("Poluprecnik je 0!");
+		super("Poluprecnik tela je 0!");
 		
 	}
 	

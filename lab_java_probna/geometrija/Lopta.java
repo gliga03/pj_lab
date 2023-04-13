@@ -8,7 +8,13 @@ public class Lopta extends Telo {
 	
 	@Override
 	public double zapremina() {
-		return (4/3)*r*r*r*Math.PI;
+		return (4.0/3.0)*r*r*r*Math.PI;
+	}
+	
+	public String toString() {
+		
+		return "Lopta sa zapreminom: " + zapremina() + ", r = " + r;
+		
 	}
 	
 }

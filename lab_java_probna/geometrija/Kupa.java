@@ -13,7 +13,13 @@ public class Kupa extends Telo {
 
 	@Override
 	public double zapremina() {
-		return (1/3)*r*r*h*Math.PI;
+		return (1.0/3.0) * r*r*h*Math.PI;
+	}
+	
+	public String toString() {
+		
+		return "Kupa sa zapreminom: " + zapremina() + ", r = " + r + ", h = " + h;
+		
 	}
 	
 }

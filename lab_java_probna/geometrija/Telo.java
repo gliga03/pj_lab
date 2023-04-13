@@ -36,19 +36,17 @@ public abstract class Telo implements Comparable<Telo> {
 	@Override
 	public int compareTo(Telo t) {
 		
-		if (this.r < t.r)
+		if (this.zapremina() < t.zapremina())
 			return -1;
-		else if (this.r == t.r)
+		else if (this.zapremina() == t.zapremina())
 			return 0;
 		else
 			return 1;
 	}
-	
-	public double getR() { return r; }
 
 	public String toString() {
 		
-		return "Telo sa poluprecnikom: " + r;
+		return "Telo sa zapreminom: " + zapremina();
 		
 	}
 	

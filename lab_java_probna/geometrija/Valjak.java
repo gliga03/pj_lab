@@ -16,5 +16,11 @@ public class Valjak extends Telo {
 		return r*r*h*Math.PI;
 	}
 	
+	public String toString() {
+		
+		return "Valjak sa zapreminom: " + zapremina() + ", r = " + r + ", h = " + h;
+		
+	}
+	
 
 }

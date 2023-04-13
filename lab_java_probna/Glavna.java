@@ -52,7 +52,7 @@ public class Glavna {
 		} catch (NultoTelo e) {
 			System.out.println(e.toString());
 		}
-
+		
 		k.print("tekstfajl.txt");
 		
 	}
