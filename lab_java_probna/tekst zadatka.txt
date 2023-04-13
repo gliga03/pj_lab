@@ -1,0 +1,88 @@
+- sve klase osim glavne su u paketu geometrija
+
+
+
+- apstraktna klasa Telo implementira Comparable<Telo>
+
+   - jedan podatak član (double r)
+
+   - podatak član klase - broj kreiranih tela (int broj)
+
+   - konstruktor klase učitava r iz bin fajla datog imena
+
+   - ali učitava svoj podatak iz fajla, po redu koji je
+
+   - za to učitavanje odgovarajućeg koristi apstraktni podatak
+
+   - apstraktna funkcija zapremina
+
+   - funkcija konkretna compareTo koju nameće Comparable
+
+
+
+- konkretne potklase klase Telo su:
+
+   - Valjak
+
+   - Lopta
+
+   - Kupa
+
+
+
+- Lopta i Kupa imaju random element
+
+   - visina im je random
+
+
+
+- sve konkretne potklase
+
+   - konkretizuju zapreminu
+
+   - zapremina lopte je (4/3)rrrPi
+
+   - zapremina kupe je (1/3)rrhPi
+
+
+
+- klasa Kolekcija
+
+   - u konstruktoru kreira bin fajl (jedan podatak da mu je nula zbog izuz)
+
+   - u taj fajl ubaciti double brojeve po želji, ali najmanje 3 komada
+
+   - atribut lista je tipa ArrayList parametrizovan odgovarajućim tipom
+
+   - funkcija za ubacivanje (baca izuzetak tipa NultoTelo ako je r==0)
+
+   - izuzetak će biti hvatan u main funkciji
+
+   - funkcija za štampanje sortirane liste zapremina u tekstualni fajl nekog imena
+
+   - ova funkcija poziva fabrički metod za sortiranje liste
+
+
+
+- izuzetak tipa NultoTelo
+
+   - ako traži serialization id, izabrati default ili generated iz quick fix
+
+
+
+- u main funkciji isprobati sve ovo
+
+   - jedna kolekcija (konstruktor će napraviti binarni fajl)
+
+   - nekoliko tela kreirati i ubaciti u nju (svako telo će iščitati svoj podatak iz bin fajla)
+
+   - broj tela bi trebalo da odgovara broju doublova u bin fajlu
+
+   - ubacivanja uraditi tako da ako naiđe nulto telo ono jednostavno ne bude ubačeno
+
+   - samo bude odštampan izuzetak
+
+   - a program nastavi dalje normalno da se izvršava, znači ne biva prekinut na nulto telo
+
+   - sort i elementi sortirane liste u txt fajl zadatog imena
+
